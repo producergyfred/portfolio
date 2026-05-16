@@ -558,27 +558,20 @@ I work with youth from underserved communities to build digital skills that crea
     <!-- RIGHT : CONTACT FORM -->
     <div class="contact-right card">
       <form action="https://formsubmit.co/producergyfred@gmail.com" method="POST">
-        <input type="text"
-               name="name"
-               placeholder="Your Name"
-               required>
 
-        <input type="email"
-               name="email"
-               placeholder="Email Address"
-               required>
+  <input type="hidden" name="_captcha" value="false">
 
-        <input type="tel"
-               name="phone"
-               placeholder="Phone Number"
-               required>
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
 
-        <textarea name="message"
-                  rows="6"
-                  placeholder="Your Message"
-                  required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+  <input type="text" name="name" required>
+
+  <input type="email" name="email" required>
+
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+</form>
     </div>
   </div>
 </section>
