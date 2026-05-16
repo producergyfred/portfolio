@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GYFRED NYAGWANG'ONYANGO | Portfolio</title>
+
+<style>
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #FFF5E1;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1E293B;
+  color: #ffffff;
+  background-image: url('https://i.ibb.co/qbJ8bcV/Ajiffo.png');
+  background-position: right 15px center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-weight: normal;
+  color: #ffffff;
+}
+header h2 {
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 15px;
+  background: #800000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta-buttons a:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1.5px solid #800000;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #800000;
+}
+
+.card {
+  background: #1E293B;
+  color: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+/* CONTACT SECTION */
+.contact-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+}
+
+/* SOCIAL LINKS */
+.contact-left a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.contact-left a:hover {
+  color: #FFD700;
+}
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1px solid #800000;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+}
+/* LINKS */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFD700;
+}
+
+/* FOOTER */
+.footer {
+  background: #800000;
+  color: #ffffff;
+  padding: 40px 20px 15px;
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-box {
+  width: 30%;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+}
+
+/* alignment */
+.footer-box.left {
+  text-align: left;
+}
+
+.footer-box.center {
+  text-align: center;
+}
+
+.footer-box.right {
+  text-align: right;
+}
+
+.footer-box a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* bottom text */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px;
+    background-size: 80px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .cta-buttons a {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-box {
+    width: 100%;
+    text-align: center !important;
+  }
+}
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1px solid #800000;
+}
+/* CONTACT SECTION */
+.contact-container {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+}
+
+/* SOCIAL LINKS */
+.contact-left a {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-left a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: #800000;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1px solid #800000;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+  }
+  }
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 38px;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: glow 1.5s infinite alternate;
+  text-decoration: none;
+}
+
+/* HOVER EFFECT */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* GLOW ANIMATION */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>GYFRED NYAGWANG' ONYANGO</h1>
+  <h2>ICT Trainer | Web Developer | Graphic Designer</h2>
+<p>
+    Empowering communities through practical ICT trainings, digital literacy.
+</P>
+    <P>
+    Creating modern web solutions and impactful visual designs driven by technology.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+ </header>
+
+<section id="about">
+  <h2>ABOUT</h2>
+  <div class="card">
+    <p>
+     I Gyfred Nyagwang’ Onyango, professionally known as Producer Gyfred. I am a Kenyan ICT trainer, web developer, graphic designer based in Nairobi, Kenya. I currently serve as an ICT Trainer at Mathare Peace Initiative (MPI Kenya), where I work with youths from underserved communities to help them develop practical digital skills for employment and entrepreneurship. I specialize in web development, digital design, and creative production, with a strong focus on website creation, visual communication, and digital innovation. Besides my training work, I collaborate with individuals and organizations on website development, brand identity design, and Search Engine Optimization. Through both my professional and community-based initiatives, I promote the use of technology as a tool for social and economic empowerment.”
+
+Skills
+ICT Training
+Web Development
+Graphic Design
+I work with youth from underserved communities to build digital skills that create real economic opportunities. I am available for training programs, workshops, speaking engagements, webinars, and institutional partnerships focused on ICT, digital literacy, web development, graphic design, and youth empowerment.
+    </p>
+    <h3>Skills</h3>
+
+    <ul>
+      <li>ICT Training</li>
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+    </ul>
+
+    <p>
+      I work with youth from underserved communities
+      to build digital skills that create real economic opportunities.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+
+  <h2>SERVICES</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>ICT Training</h3>
+      <p>
+        Digital literacy, computer skills training,
+        and youth empowerment programs.</p>
+        <p><b>Contact for pricing</b></p>
+    </div>
+
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>
+      Portfolio websites,Personal google sites,and business websites</P>
+        <p><b>Contact for pricing</b></p>
+    </div>
+
+    <div class="card">
+      <h3>Graphic Design</h3>
+      <p>
+        Business and Company branding, Event posters, and social media QR         codes Re-generation.</p>
+        <p><b>Contact for pricing</b></p>
+    </div>
+
+  </div>
+
+</section>
+
+<h2>PROJECTS</h2>
+
+  <div class="card">
+    <h3>Websites Built</h3>
+    <p>
+      This website showcases a personal portfolio and business websites developed by Producer Gyfred.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Design Work</h3>
+
+    <p>
+      Branding projects, posters, and digital creatives.
+    </p>
+
+    <p>
+      <a href="https://whatsapp.com/channel/0029VbBPtHkElagsD0NBeG1u" target="_blank">
+        Join My WhatsApp Channel
+      </a>
+    </p>
+
+    <p>
+      <a href="https://pin.it/2LgrLD7JG" target="_blank">
+        Visit My Pinterest
+      </a>
+    </p>
+
+  </div>
+
+</section>
+<section id="experience">
+
+  <h2>EXPERIENCE & IMPACT</h2>
+
+  <div class="card">
+
+    <h3>Digital Services Provider - MIKENI CYBER</h3>
+
+    <p>
+      Assisted clients with online government services, applications, and document processing through e-Citizen and NTSA. Supported customers in online job applications and digital service access. Managed customer support and helped promote business services through social media.
+    </p>
+  </div>
+  <div class="card">
+    <h3>ICT Trainer – Mathare Peace Initiative</h3>
+    <p>
+     Delivering ICT training programs focused on youth empowerment,            digital literacy, and practical technology skills for underserved       communities.
+    </p>
+  </div>
+</section>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<section id="contact">
+  <h2>CONTACT</h2>
+  <div class="contact-container">
+
+    <!-- LEFT : SOCIAL LINKS -->
+    <div class="contact-left card">
+      <h3>Social Links</h3>
+      <a href="https://pin.it/2LgrLD7JG" target="_blank">
+        <i class="fab fa-pinterest"></i> Pinterest
+      </a>
+      <a href="https://www.instagram.com/producergyfred?igsh=MTNnNTN6eDc5YTlldA==" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/producergyfred" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://wa.me/254714164624" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+     <a href="https://about.me/producergyfred" target="_blank">
+  <i class="fas fa-globe"></i> About.me
+    </a>
+      <a href="https://www.youtube.com/channel/UCw90KePL2ZUP6ok1M2fS_nw" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+    </div>
+
+    <!-- RIGHT : CONTACT FORM -->
+    <div class="contact-right card">
+      <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="tel"
+               name="phone"
+               placeholder="Phone Number"
+               required>
+
+        <textarea name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                  required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER --> 
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LEFT -->
+    <div class="footer-box left">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-box center">
+      <h3>Social Links</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">YouTube</a>
+      <a href="#">About.me</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-box right">
+      <h3>Location</h3>
+      <p>Mathere,Nairobi, Kenya</p>
+      <a href="https://maps.app.goo.gl/Xqn15npyKhXWZL8y8"=,Nairobi+Kenya" target="_blank">
+        View Map
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Producer Gyfred. All Rights Reserved.</p>
+  </div>
+</footer>
+<a href="https://wa.me/254714164624" 
+   class="whatsapp-float" 
+   target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
