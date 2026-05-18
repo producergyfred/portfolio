@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>GYFRED NYAGWANG'ONYANGO | Portfolio</title>
+<link rel="icon" href="Ajiffo.png">
 <style>
 html {
   scroll-behavior: smooth;
@@ -401,6 +402,12 @@ form button:hover {
     box-shadow: 0 0 25px rgba(37, 211, 102, 1);
   }
 }
+  .card {
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
 </style>
 </head>
 <body>
@@ -626,9 +633,12 @@ I work with youth from underserved communities to build digital skills that crea
         View Map
       </a>
     </div>
-  </div>
   <div class="footer-bottom">
-    <p>© 2026 Producer Gyfred. All Rights Reserved.</p>
+    <p>© <span id="year"></span> Producer Gyfred. All Rights Reserved.</p>
+<script>
+document.getElementById("year").innerHTML =
+new Date().getFullYear();
+</script>
   </div>
 </footer>
 <a href="https://wa.me/254714164624" 
