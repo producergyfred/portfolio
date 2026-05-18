@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>GYFRED NYAGWANG'ONYANGO | Portfolio</title>
-
 <style>
-
+html {
+  scroll-behavior: smooth;
+}
 /* BODY */
 body {
   margin: 0;
@@ -24,7 +25,7 @@ header {
   color: #ffffff;
   background-image: url('Ajiffo.png');
   background-position: right 15px center;
-  background-size: 200px;
+  background-size: clamp(100px, 18vw, 200px);
   background-repeat: no-repeat;
 }
 
@@ -228,7 +229,7 @@ a:hover {
 
   header {
     padding: 20px;
-    background-size: clamp(80px, 15vw, 200px);
+    background-size: clamp(80px);
   }
 
   header h1 {
