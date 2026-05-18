@@ -228,18 +228,30 @@ a:hover {
 @media (max-width: 768px) {
 
   header {
-    padding: 20px;
-    background-size: clamp(80px);
+    padding: 30px 15px;
+    background-size: 80px;
+    background-position: right 10px top 10px;
   }
 
   header h1 {
-    font-size: 28px;
+    font-size: 26px;
+    padding-right: 90px;
+  }
+
+  header h2,
+  header p {
+    padding-right: 90px;
   }
 
   .cta-buttons a {
     display: block;
-    width: 60%;
+    width: 80%;
+    max-width: 300px;
     margin: 10px auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
   }
 
   .footer-container {
@@ -251,6 +263,11 @@ a:hover {
     width: 100%;
     text-align: center !important;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 /* CONTACT FORM */
 form {
