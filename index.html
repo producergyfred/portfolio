@@ -414,6 +414,24 @@ form button:hover {
 .card:hover {
   transform: translateY(-5px);
 }
+  /* BOOKING BUTTON */
+.booking-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 18px;
+  background: #800000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.booking-btn:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1px solid #800000;
+}
 </style>
 </head>
 <body>
@@ -432,6 +450,7 @@ form button:hover {
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#services">Services</a>
+    <a href="#Booking">Booking</a>
     <a href="#contact">Contact</a>
   </div>
  </header>
@@ -488,7 +507,55 @@ form button:hover {
   </div>
 
 </section>
+<section id="booking">
 
+  <h2>BOOK A SERVICE</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>ICT Training Booking</h3>
+
+      <p>
+        Book digital literacy training, ICT workshops,
+        or youth empowerment sessions.
+      </p>
+
+      <a href="https://wa.me/254714164624?text=Hello%20Gyfred,%20I%20want%20to%20book%20ICT%20training."
+         target="_blank"
+         class="booking-btn">
+         Book via WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Web Development Booking</h3>
+
+      <p>
+        Request portfolio websites, business websites,
+        and Google Sites development.
+      </p>
+
+      <a href="mailto:producergyfred@gmail.com?subject=Website Booking"
+         class="booking-btn">
+         Book via Email
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Graphic Design Booking</h3>
+      <p>
+        Book branding, posters, logos,
+        and digital design services.
+      </p>
+      <a href="https://calendly.com/YOUR-USERNAME"
+         target="_blank"
+         class="booking-btn">
+         Schedule Appointment
+      </a>
+    </div>
+  </div>
+</section>
   <section id="projects">
   <h2>PROJECTS</h2>
   <div class="card">
