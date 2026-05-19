@@ -12,30 +12,28 @@
 html {
   scroll-behavior: smooth;
 }
-  /* TOP NAVIGATION */
 .cta-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .cta-buttons a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 10px 15px;
   background: #800000;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: 0.3s;
-}
 
-.cta-buttons a:hover {
-  background: #ffffff;
-  color: #800000;
-  border: 1.5px solid #800000;
+  transition: 0.3s;
+  white-space: nowrap;
 }
 @keyframes floatSwing {
   0% {
@@ -59,8 +57,6 @@ html {
   }
 }
 
-.cta-buttons a {
-  animation: floatSwing 4s ease-in-out infinite;
 }
 /* BODY */
 body {
@@ -95,27 +91,6 @@ header h2 {
 header h2 {
   font-weight: normal;
   color: #ffffff;
-}
-
-.cta-buttons {
-  margin-top: 20px;
-}
-
-.cta-buttons a {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 15px;
-  background: #800000;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.cta-buttons a:hover {
-  background: #ffffff;
-  color: #800000;
-  border: 1.5px solid #800000;
 }
 
 /* SECTIONS */
@@ -290,13 +265,6 @@ a:hover {
   header h2,
   header p {
     padding-right: 90px;
-  }
-
-  .cta-buttons a {
-    display: block;
-    width: 80%;
-    max-width: 300px;
-    margin: 10px auto;
   }
 
   .contact-container {
