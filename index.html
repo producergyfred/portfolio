@@ -12,6 +12,56 @@
 html {
   scroll-behavior: smooth;
 }
+  /* TOP NAVIGATION */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #800000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-buttons a:hover {
+  background: #ffffff;
+  color: #800000;
+  border: 1.5px solid #800000;
+}
+@keyframes floatSwing {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-2px) rotate(1deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.cta-buttons a {
+  animation: floatSwing 4s ease-in-out infinite;
+}
 /* BODY */
 body {
   margin: 0;
@@ -436,24 +486,28 @@ form button:hover {
 </head>
 <body>
 <header id="home">
-  <h1>GYFRED NYAGWANG' ONYANGO</h1>
-  <h2>ICT Trainer | Web Developer | Graphic Designer</h2>
-<p>
-    Empowering communities through practical ICT trainings, digital literacy.
-</p>
-    <p>
-    Creating modern web solutions and impactful visual designs driven by technology.
-  </p>
 
+  <!-- TOP NAVIGATION -->
   <div class="cta-buttons">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#services">Services</a>
-    <a href="#Booking">Booking</a>
+    <a href="#booking">Booking</a>
     <a href="#contact">Contact</a>
   </div>
- </header>
+
+  <h1>GYFRED NYAGWANG' ONYANGO</h1>
+
+  <h2>ICT Trainer | Web Developer | Graphic Designer</h2>
+
+  <p>
+    Empowering communities through practical ICT trainings, digital literacy.
+  </p>
+  <p>
+    Creating modern web solutions and impactful visual designs driven by technology.
+  </p>
+</header>
 <section id="about">
   <h2>ABOUT</h2>
   <div class="card">
@@ -607,7 +661,7 @@ form button:hover {
   </div>
 </section>
   <section>
-<<h2>TESTIMONIALS</h2>
+<h2>TESTIMONIALS</h2>
 <div class="card">
 <h3>- Mathare Peace Initiative -</h3>
   <p>"He (Gyfred) has greatly helped our youths gain practical ICT skills through the Green Innovation Hub Program."</p>
@@ -650,7 +704,7 @@ form button:hover {
 
     <!-- RIGHT : CONTACT FORM -->
     <div class="contact-right card">
-      <form action="https://formsubmit.co/producergyfred@gmail.com" method="POST">
+      <form action="https://form.co/producergyfred@gmail.com" method="POST">
 
   <input type="text"
                name="name"
