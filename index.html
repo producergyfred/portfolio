@@ -8,8 +8,6 @@
 <meta name="author" content="Producer Gyfred">
 <title>Producer Gyfred</title>
 <link rel="icon" href="Ajiffo.png">
-<link rel="icon" href="Gyfred.png">
-<link rel="icon" href="GYFRED IMAGE.png">
 <style>
 /* BODY */
 body {
@@ -26,15 +24,10 @@ header {
   background-color: #1E293B;
   color: #ffffff;
   background-image: url('Ajiffo.png');
-    background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: clamp(100px, 18vw, 200px);
+  background-repeat: no-repeat;
 }
- .hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-}
-
 header h1 {
   font-size: 40px;
   margin-bottom: 10px;
@@ -317,29 +310,7 @@ html, body {
 }
 </style>
 </head>
-  <script>
-<link rel="icon" href="Ajiffo.png">
-<link rel="icon" href="Gyfred.png">
-<link rel="icon" href="GYFRED IMAGE.png">
-];
-
-let current = 0;
-
-const hero = document.querySelector('.hero');
-
-function changeBackground() {
-    hero.style.backgroundImage = `url('${images[current]}')`;
-
-    current = (current + 1) % images.length;
-}
-
-// Initial image
-changeBackground();
-
-// Change every 5 seconds
-setInterval(changeBackground, 5000);
-</script>
-<body>
+ <body>
 <header id="home">
 
   <div class="cta-buttons">
