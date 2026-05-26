@@ -18,15 +18,63 @@ body {
   line-height: 1.4;
 }
 /* HEADER */
+/* HEADER */
 header {
+  position: relative;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #1E293B;
+  padding: 120px 20px;
   color: #ffffff;
-  background-image: url('Ajiffo.png');
-  background-position: right 15px center;
-  background-size: clamp(100px, 18vw, 200px);
+  overflow: hidden;
+}
+
+/* SLIDESHOW BACKGROUND */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('image1.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  animation: slideshow 25s infinite;
+  z-index: -2;
+}
+
+/* DARK OVERLAY */
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* SLIDESHOW ANIMATION */
+@keyframes slideshow {
+
+  0% {
+    background-image: url('image1.jpg');
+  }
+
+  20% {
+    background-image: url('image2.jpg');
+  }
+
+  40% {
+    background-image: url('image3.jpg');
+  }
+
+  60% {
+    background-image: url('image4.jpg');
+  }
+
+  80% {
+    background-image: url('image5.jpg');
+  }
+
+  100% {
+    background-image: url('image1.jpg');
+  }
 }
 header h1 {
   font-size: 40px;
